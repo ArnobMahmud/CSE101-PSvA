@@ -2,7 +2,6 @@
     Author : Arnob Mahmud
 
     mail : arnob.tech.me@gmail.com
-
 */
 
 #include <stdio.h>

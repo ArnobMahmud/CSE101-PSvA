@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
     scanf("%f", &fahr);
 
     cel = (fahr - 32) * 5 / 9;
-    printf("Enter the temperature in Celsius is %.2f:\n", cel);
+    printf("Temperature in Celsius is %.2f.\n", cel);
 
     return 0;
 }

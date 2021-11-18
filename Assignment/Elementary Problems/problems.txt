@@ -1,0 +1,13 @@
+            Problems
+    <<----------------->>
+    
+1.Write a c program to calculate the sum of two numbers.
+2.Write a c program to calculate the average of three numbers.
+3.Write a c program to calculate the area of a triangle using 1/2 * base * height.
+4.Write a c program to calculate the area of a triangle using three sides.
+5.Write a c program to calculate the area of a rectangle.
+6.Write a c program to calculate the area of a circle.
+7.Write a c program to convert Celsius temperature to Fahrenheit temperature.
+8.Write a c program to convert Fahrenheit temperature to Celsius temperature.
+9.Write a c program to swap two numbers.
+10.Write a c program to ceil, round, and floor a floating-point number.

@@ -1,0 +1,24 @@
+                           Problems
+                    <<----------------->>
+
+2.Write a c program to check whether a number is even or odd.
+3.Write a c program to check whether a number is positive or negative or equal to zero.
+4.Write a c program to find the largest between two numbers.
+5.Write a c program to find the smallest among three numbers.
+6.Write a c program to check whether a year is a leap year or not.
+7.Write a c program to check whether a student has passed (40%) or failed from a given mark.
+8.Write a c program to calculate the grade points of a student for a particular subject from the given mark using the following table:
+90% and above           4.0
+80% to below 90%        3.5
+70% to below 80%        3.0
+60% to below 70%        2.5
+50% to below 60%        2.0
+Below 50%               0
+
+9.Write a c program to check whether a character is a capital letter or a small letter or others.
+10.Write a c program to check whether a character is a vowel or consonant or digit or white space or special character.
+
+12.Write a c program to spell a digit using switch.
+13.Write a c program to check whether a character is vowel or consonant using switch.
+13.Write a c program to implement a calculator (+, -, *, /, %) using switch.
+14.Write a c program to implement a menu based temperature conversion using switch.

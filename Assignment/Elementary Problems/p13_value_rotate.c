@@ -7,7 +7,7 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int x, y, z, temp1;
+    int x, y, z, temp;
 
     printf("Enter the value of x : \n");
     scanf("%d", &x);
@@ -16,11 +16,11 @@ int main(int argc, char const *argv[])
     printf("Enter the value of z : \n");
     scanf("%d", &z);
 
-    temp1 = x;
+    temp = x;
 
     x = y;
     y = z;
-    z = temp1;
+    z = temp;
 
     printf("After rotating - the value of x is : %d\n", x);
     printf("After rotating - the value of y is : %d\n", y);

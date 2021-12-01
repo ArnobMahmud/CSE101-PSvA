@@ -24,8 +24,8 @@ int main(int argc, char const *argv[])
     }
     else
     {
-        r1 = (-b + sqrt(b * b - 4 * a * c)) / 2.0 * a;
-        r2 = (-b - sqrt(b * b - 4 * a * c)) / 2.0 * a;
+        r1 = (-b + sqrt(discriminant)) / 2.0 * a;
+        r2 = (-b - sqrt(discriminant)) / 2.0 * a;
 
         printf("Root1 is %3.2f.\n", r1);
         printf("Root2 is %3.2f.\n", r2);

@@ -17,19 +17,19 @@ int main(int argc, char const *argv[])
     {
         printf("Grade point is : 4.0");
     }
-    else if (marks < 90 && marks >= 80)
+    else if (marks >= 80)
     {
         printf("Grade point is : 3.5");
     }
-    else if (marks < 80 && marks >= 70)
+    else if (marks >= 70)
     {
         printf("Grade point is : 3.0");
     }
-    else if (marks < 70 && marks >= 60)
+    else if (marks >= 60)
     {
         printf("Grade point is : 2.5");
     }
-    else if (marks < 60 && marks >= 50)
+    else if (marks >= 50)
     {
         printf("Grade point is : 2");
     }

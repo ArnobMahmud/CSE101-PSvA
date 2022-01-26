@@ -13,13 +13,21 @@ int main(int argc, char const *argv[])
     printf("Enter a character :\n");
     scanf("%c", &ch);
 
-    if (ch > 64 && ch < 91)
+    if (ch > 64 && ch < 91 || ch > 96 && ch < 123)
     {
-        printf("%c is in uppercase character.\n", ch);
+        if (ch > 64 && ch < 91)
+        {
+            printf("%c is in uppercase character.\n", ch);
+        }
+        else
+        {
+            printf("%c is in lowercase character.\n", ch);
+        }
     }
     else
     {
-        printf("%c is in lowercase character.\n", ch);
+        printf("%c is other character.\n", ch);
     }
+
     return 0;
 }

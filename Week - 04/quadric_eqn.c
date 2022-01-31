@@ -25,14 +25,14 @@ int main(int argc, char const *argv[])
         x = -c / b;
         printf("Solution is x = %f\n", x);
     }
-    else if (root < 0)
+    else if (root < 0.0)
     {
         printf("Solution is imaginary\n");
     }
     else
     {
-        x1 = (-b + (root)) / (2 * a);
-        x2 = (-b - (root)) / (2 * a);
+        x1 = (-b + (root)) / (2.0 * a);
+        x2 = (-b - (root)) / (2.0 * a);
 
         printf("x1 is : %f\n", x1);
         printf("x2 is : %f\n", x2);

@@ -15,6 +15,7 @@ int main(int argc, char const *argv[])
 
     printf("Number \t Square-root \t Square\n");
     printf("---------------------------------\n");
+    
     for (int i = 1; i <= num; i++)
     {
         printf("%d\t %.2f\t\t %d\n", i, (float)sqrt(i), i*i);

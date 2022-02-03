@@ -6,28 +6,28 @@
 
 #include <stdio.h>
 #include <math.h>
-#define PI 3.1421
 
 int main(int argc, char const *argv[])
 {
-    double x, rad;
+    double x;
     char T;
 
     printf("Enter trigonmetric function with angle in radian : \n");
     scanf("%c %lf", &T, &x);
 
-    rad = x * (PI / 180);
-
     switch (T)
     {
     case 'S':
-        printf("Value is : %lf\n", sin(rad));
+    case 's':
+        printf("Value is : %.2lf\n", sin(x));
         break;
     case 'C':
-        printf("Value is : %lf\n", cos(rad));
+    case 'c':
+        printf("Value is : %.2lf\n", cos(x));
         break;
     case 'T':
-        printf("Value is : %lf\n", tan(rad));
+    case 't':
+        printf("Value is : %.2lf\n", tan(x));
         break;
 
     default:

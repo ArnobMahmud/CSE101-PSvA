@@ -1,7 +1,13 @@
+/*
+    Author : Arnob Mahmud
+
+    mail : arnob.tech.me@gmail.com
+*/
+
 #include <stdio.h>
 #include <math.h>
 
-int main(int argc, char const *argv[])
+    int main(int argc, char const *argv[])
 {
 
     long long int nid;
@@ -11,7 +17,7 @@ int main(int argc, char const *argv[])
     long long int temp = nid / pow(10,10);
     long long int ans = temp % 10;
 
-    printf("%ld\n", ans);
+    printf("%lld\n", ans);
 
     switch (ans)
     {

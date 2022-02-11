@@ -10,6 +10,7 @@
 int main(int argc, char const *argv[])
 {
     int a, b, c, e, f, g;
+    
     printf("Enter the values of three side of triangle :\n");
     scanf("%d %d %d", &a, &b, &c);
 

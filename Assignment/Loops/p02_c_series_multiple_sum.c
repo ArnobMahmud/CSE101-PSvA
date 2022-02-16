@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, sum = 0;
+    int n, sum = 1;
 
     printf("Enter max value of series :\n");
     scanf("%d", &n);

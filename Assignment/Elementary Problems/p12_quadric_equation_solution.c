@@ -10,10 +10,13 @@
 int main(int argc, char const *argv[])
 {
     float a, b, c, r1, r2, discriminant;
+
     printf("Enter the value of a : \n");
     scanf("%f", &a);
+    
     printf("Enter the value of b : \n");
     scanf("%f", &b);
+    
     printf("Enter the value of c : \n");
     scanf("%f", &c);
 

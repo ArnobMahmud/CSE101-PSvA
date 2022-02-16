@@ -5,45 +5,44 @@
 */
 
 #include <stdio.h>
-#define MIN_CHARGE 100
+#define METER_CHARGE 100
 #define SUR_CHARGE 0.15
 
 int main(int argc, char const *argv[])
 {
-
     char name[20];
-    float unit, bill, extdbill;
+    float units, bills, sum_bills;
 
     printf("Enter your name :\n");
     scanf("%s", &name);
 
-    printf("Enter using unit :\n");
-    scanf("%f", &unit);
+    printf("Enter units :\n");
+    scanf("%f", &units);
 
-    if (unit <= 200)
+    if (units < 0)
     {
-        bill = MIN_CHARGE + 0.80 * unit;
-        printf("%s your total electric bill is %.2f.\n", name, bill);
+        printf("Invalid input.\n");
     }
-    else if (unit <= 300)
+    else if (units <= 200)
     {
-        bill = MIN_CHARGE + 0.90 * unit;
-        printf("%s your total electric bill is %.2f.\n", name, bill);
+        bills = units * .8;
+    }
+    else if (units <= 300)
+    {
+        bills = 200 * .8 + (units - 200) * .9;
     }
     else
     {
-        bill = MIN_CHARGE + 1.00 * unit;
-        if (bill > 400)
-        {
-            extdbill = bill * SUR_CHARGE;
-            bill += extdbill;
-            printf("%s your total electric bill is %.2f.\n", name, bill);
-        }
-        else
-        {
-            printf("%s your total electric bill is %.2f.\n", name, bill);
-        }
+        bills = 200 * .8 + 100 * .9 + (units - 300) * 1.00;
     }
+
+    sum_bills = METER_CHARGE + bills;
+    if (sum_bills > 400)
+    {
+        sum_bills += sum_bills * SUR_CHARGE;
+    }
+
+    printf("%s your bill is %.0f.\n", name, sum_bills);
 
     return 0;
 }

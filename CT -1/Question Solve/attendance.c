@@ -14,6 +14,7 @@ int main(int argc, char const *argv[])
     scanf("%f %f", &atd_cls, &total_cls);
 
     atd = (atd_cls / total_cls) * 100;
+    //printf("Attendence percentage is : %.2f\n", atd);
 
     if (atd >= 90)
     {

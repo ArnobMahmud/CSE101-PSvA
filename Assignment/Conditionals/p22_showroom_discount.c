@@ -21,6 +21,7 @@ int main(int argc, char const *argv[])
     switch (item)
     {
     case 'm':
+    case 'M':
         if (purchase_amount >= 0)
         {
             if (purchase_amount <= 100)
@@ -51,6 +52,7 @@ int main(int argc, char const *argv[])
         break;
 
     case 'h':
+    case 'H':
         if (purchase_amount >= 0)
         {
             if (purchase_amount <= 100)

@@ -8,12 +8,11 @@
 
 int main(int argc, char const *argv[])
 {
-    int i = '0', a;
-    printf("%d\n", a);
+    int a = 10, b = 20, c;
 
-    if (i = a)
+    if (1)
     {
-        printf("%d", a);
+        printf("Ans is %d.\n", (a + 4 / 6 * 6 / 2));
     }
 
     return 0;

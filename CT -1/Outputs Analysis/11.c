@@ -8,12 +8,10 @@
 
 int main(int argc, char const *argv[])
 {
-    int i = '0', a;
-    printf("%d\n", a);
-
-    if (i = a)
+    int x = '10';
+    if (x = 20)
     {
-        printf("%d", a);
+        printf("True");
     }
 
     return 0;

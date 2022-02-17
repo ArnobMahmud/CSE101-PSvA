@@ -8,13 +8,8 @@
 
 int main(int argc, char const *argv[])
 {
-    int i = '0', a;
-    printf("%d\n", a);
-
-    if (i = a)
-    {
-        printf("%d", a);
-    }
-
+    char x;
+    x = 100;
+    printf("%c", x);
     return 0;
 }

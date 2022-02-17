@@ -11,6 +11,8 @@ int main(int argc, char const *argv[])
     unsigned x = 1;
     signed char y = -1;
 
+    printf("%c", y);
+
     if (x > y)
     {
         printf("x > y");

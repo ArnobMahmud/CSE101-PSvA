@@ -8,13 +8,10 @@
 
 int main(int argc, char const *argv[])
 {
-    int i = '0', a;
-    printf("%d\n", a);
-
-    if (i = a)
-    {
-        printf("%d", a);
-    }
+    int x = 5, y = 10, z = 10;
+    
+    x = y == z;
+    printf("%d", x);
 
     return 0;
 }

@@ -1,5 +1,5 @@
             Problems
-    <<----------------->>
+      <<----------------->>
     
 1.Write a c program to calculate the sum of two numbers.
 2.Write a c program to calculate the average of three numbers.

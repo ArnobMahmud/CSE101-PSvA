@@ -1,0 +1,35 @@
+1.Answer the following questions with appropriate examples and flowcharts:
+ (a) How does a for loop work?
+ (b) How does a while loop work?
+ (c) How does a do-while loop work?
+ (d) How does the goto statement work?
+ (e) How does the break statement work?
+ (f) How does the continue statement work?
+
+2.Write a c program to print the sum of the following series:
+ (a) 1 + 2 + 3 + . . . . + N
+ (b) 1^2 + 3^2 + 5^2 + . . . . + N^2
+ (c) 2^2 * 4^2 * 6^2 * . . . . * N^2
+ (d) 1 + 1/2 + 1/3 + . . . . + 1/N
+ (e) 1 - 2 + 3 - 4 + 5 - 6 + . . . . + N
+ (f) 1 * 2 + 2 * 3 + 3 * 4 + . . . . + n1 * n2
+ (g) 1 * 3 * 4 + 2 * 5 * 6 + 3 * 7 * 8 + . . . . + n1 * n2 * n3
+ (h) 1 + 5 + 9 + . . . . + Nth number
+ (i) 1 + 2 + 4 + 5 + 7 + 8 + . . . . + N
+ (j) 60 + 57 + 54 + . . . . >=1
+
+3.Write a c program to calculate the sum of the Fibonacci series upto N-th term:
+	0 + 1 + 1 + 2 + 3 + 5 + 8 + . . . . + Nth term
+
+4.Write a c program to calculate the factorial of a number.
+5.Write a c program to calculate the GCD and LCM of two numbers.
+6.Write a c program to check whether a number is prime or not.
+7.Write a c program to print the prime numbers within a range.
+8.Write a c program to count the number of digits of a number.
+9.Write a c program to calculate the sum of digits of a number.
+10.Write a c program to reverse a number.
+11.Write a c program to check whether a number is a palindrome or not.
+12.Write a c program to print the palindrome numbers within a range.
+13.Write a c program to check whether a number is an Armstrong number or not.
+14.Write a c program to print the Armstrong numbers within a range.
+15.Write a c program to check whether a number is a Strong number or not.

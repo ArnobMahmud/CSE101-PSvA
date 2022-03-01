@@ -9,12 +9,25 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, sum, even_sum = 0, odd_sum = 0;
+    int num, sum;
+    // int even_sum = 0, odd_sum = 0;
 
     printf("Enter end num : \n");
     scanf("%d", &num);
 
-    for (int i = 0; i <= num; i += 2)
+    for (int i = 0; i <= num; i++)
+    {
+        if (i % 2 == 0)
+        {
+            sum -= i;
+        }
+        else
+        {
+            sum += i;
+        }
+    }
+
+    /* for (int i = 0; i <= num; i += 2)
     {
         even_sum += i;
     }
@@ -24,7 +37,8 @@ int main(int argc, char const *argv[])
         odd_sum += j;
     }
 
-    sum = odd_sum - even_sum;
+    sum = odd_sum - even_sum; */
+
     printf("Sum is : %d.", sum);
 
     return 0;

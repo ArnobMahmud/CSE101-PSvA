@@ -13,16 +13,14 @@ int main(int argc, char const *argv[])
     printf("Enter N : ");
     scanf("%d", &N);
 
-    printf("%d %d ", fst, scd);
-    sum = (fst + scd);
-
-    for (int i = 0; i < N - 2; i++)
+    for (int i = 1; i <= N; i++)
     {
+        printf("%d ", fst);
+        sum += fst;
+
         nxt = fst + scd;
-        printf("%d ", nxt);
         fst = scd;
         scd = nxt;
-        sum += nxt;
     }
 
     printf("\nSum is %d\n", sum);

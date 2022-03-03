@@ -8,20 +8,22 @@
 
 int main(int argc, char const *argv[])
 {
-    int N, sum = 0, num,
-           a = 1, d = 4;
+    int i, N, sum = 0;
 
     printf("Enter N : ");
     scanf("%d", &N);
 
-    for (int i = 1; i <= N; i++)
+    for (i = 1; i <= N; i++)
     {
-        num = (a + (i - 1) * d);
-        sum += num;
-        // printf("%d ", num); 
+        if (i % 3 != 0)
+        {
+            sum += i;
+        }
+
+        printf("i = %d & sum = %d\n", i, sum);
     }
 
-    printf("Sum is : %d\n", sum);
+    printf("\nSum is %d.", sum);
 
     return 0;
 }

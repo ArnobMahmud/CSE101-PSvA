@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, temp = 0;
+    int num, count = 0;
 
     printf("Enter N : ");
     scanf("%d", &num);
@@ -17,12 +17,12 @@ int main(int argc, char const *argv[])
     {
         if (num % i == 0)
         {
-            temp = 1;
+            count++;
             printf("%d ", i);
         }
     }
 
-    if (temp == 1)
+    if (count > 0)
     {
         printf("\nNot a prime num\n");
     }

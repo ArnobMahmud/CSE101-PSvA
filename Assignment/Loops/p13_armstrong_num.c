@@ -9,17 +9,25 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, temp, rem, res = 0;
+    int n, temp, rem, res, count;
 
     printf("Enter a number : ");
     scanf("%d", &n);
+    
+    res = 0;
+    count = 0;
+    temp = n;
+    while (temp != 0)
+    {
+        temp /= 10;
+        count++;
+    }
 
     temp = n;
-
     while (temp != 0)
     {
         rem = temp % 10;
-        res += pow(rem, 3);
+        res += pow(rem, count);
         temp /= 10;
     }
 

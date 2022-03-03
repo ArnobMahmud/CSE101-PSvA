@@ -9,10 +9,11 @@
 
 int main(int argc, char const *argv[])
 {
-    float num, sum = 0.0;
+    int num;
+    float sum = 0.0;
 
     printf("Enter end num : \n");
-    scanf("%f", &num);
+    scanf("%d", &num);
 
     for (int i = 1; i <= num; i++)
     {

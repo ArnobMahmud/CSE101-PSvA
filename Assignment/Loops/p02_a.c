@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, sum;
+    int n, sum = 0;
 
     printf("Enter max value of series :\n ");
     scanf("%d", &n);

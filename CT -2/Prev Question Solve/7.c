@@ -20,7 +20,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, sum, d = 0;
+    int n, sum = 0, d = 0;
 
     printf("Enter n : ");
     scanf("%d", &n);

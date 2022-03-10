@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, temp, rem, res = 0;
+    int n, temp, rem, rev = 0;
 
     printf("Enter a number : ");
     scanf("%d", &n);
@@ -18,11 +18,11 @@ int main(int argc, char const *argv[])
     while (temp != 0)
     {
         rem = temp % 10;
-        res = res * 10 + rem;
+        rev = rev * 10 + rem;
         temp /= 10;
     }
 
-    printf("Reversed num : %d", res);
+    printf("Reversed num : %d", rev);
 
     return 0;
 }

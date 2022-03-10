@@ -1,7 +1,13 @@
+/*
+    Author : Arnob Mahmud
+
+    mail : arnob.tech.me@gmail.com
+*/
+
 #include <stdio.h>
 #include <math.h>
 
-int hammingNum(int n)
+void hammingNum(int n)
 {
     int count;
 
@@ -12,7 +18,7 @@ int hammingNum(int n)
         {
             count++;
         }
-        if (count > 0)
+        if (count >= 0)
         {
             printf("%d ", i);
         }

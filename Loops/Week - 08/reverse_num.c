@@ -8,12 +8,10 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, temp, rem, rev = 0;
+    int num, rev, rem = 0;
 
     printf("Enter a number : ");
     scanf("%d", &num);
-
-    temp = num;
 
     while (num != 0)
     {
@@ -22,14 +20,7 @@ int main(int argc, char const *argv[])
         num /= 10;
     }
 
-    if (rev == temp)
-    {
-        printf("Palindrome.\n");
-    }
-    else
-    {
-        printf("Not Palindrome.\n");
-    }
+    printf("Reversed num is %d", rev);
 
     return 0;
 }

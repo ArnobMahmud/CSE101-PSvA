@@ -1,7 +1,13 @@
+/*
+    Author : Arnob Mahmud
+
+    mail : arnob.tech.me@gmail.com
+*/
+
 #include <stdio.h>
 #include <math.h>
 
-float seriesSum(int r, int n)
+    float seriesSum(int r, int n)
 {
     int a = 5;
     float sum;

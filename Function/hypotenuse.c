@@ -1,7 +1,13 @@
+/*
+    Author : Arnob Mahmud
+
+    mail : arnob.tech.me@gmail.com
+*/
+
 #include <stdio.h>
 #include <math.h>
 
-float hypotenuseVal(int a, int b)
+    float hypotenuseVal(int a, int b)
 {
     float c;
     c = sqrt(pow(a, 2) + pow(b, 2));

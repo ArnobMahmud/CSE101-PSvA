@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int ll, ul, count, pc = 0;
+    int ll, ul, flag, count = 0;
 
     printf("Enter lower limit : ");
     scanf("%d", &ll);
@@ -18,21 +18,24 @@ int main(int argc, char const *argv[])
 
     for (int i = ll; i <= ul; i++)
     {
-        count = 0;
+        flag = 0;
         for (int j = 2; j <= i / 2; j++)
         {
             if (i % j == 0)
             {
-                count = 1;
+                flag = 1;
                 break;
             }
         }
-        if (count == 0)
+
+        if (flag != 1)
         {
-            pc++;
+            count++;
             printf("%d ", i);
         }
     }
-    printf("\nTotal prime number : %d", pc);
+
+    printf("\nTotal prime number is : %d.\n", count);
+
     return 0;
 }

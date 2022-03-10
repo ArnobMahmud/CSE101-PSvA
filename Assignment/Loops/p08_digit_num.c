@@ -8,18 +8,15 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, temp, rem, count = 0;
+    int num, count = 0;
 
     printf("Enter a number : ");
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    temp = n;
-
-    while (temp != 0)
+    while (num != 0)
     {
-        rem = temp % 10;
         count++;
-        temp /= 10;
+        num /= 10;
     }
 
     printf("Total digit in num is : %d", count);

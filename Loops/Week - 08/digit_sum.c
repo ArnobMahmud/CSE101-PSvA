@@ -8,28 +8,19 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, temp, rem, rev = 0;
+    int num, sum = 0, rem = 0;
 
     printf("Enter a number : ");
     scanf("%d", &num);
 
-    temp = num;
-
     while (num != 0)
     {
         rem = num % 10;
-        rev = rev * 10 + rem;
+        sum += rem;
         num /= 10;
     }
 
-    if (rev == temp)
-    {
-        printf("Palindrome.\n");
-    }
-    else
-    {
-        printf("Not Palindrome.\n");
-    }
+    printf("Sum is %d.", sum);
 
     return 0;
 }

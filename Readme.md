@@ -11,12 +11,82 @@
 - **Intro**
 - **Syntax**
 - **Data Types**
+- **Operators**
 - **Conditions**
 - **Loops**
-- **Maths**
+- **Array**
 - **Function**
-- **Pointer**
 - **String**
-- **Linked List**
-- **File Handling**
-- **Exceptions Handling**
+- **Pointer**
+
+### **Problem Solving**
+### [**Operators**](https://github.com/ArnobMahmud/CSE101-PSvA/tree/master/Assignment/Elementary%20Problems)
+1.Write a c program to calculate the sum of two numbers. <br>
+2.Write a c program to calculate the average of three numbers.<br>
+3.Write a c program to calculate the area of a triangle using 1/2 * base * height.<br>
+4.Write a c program to calculate the area of a triangle using three sides.<br>
+5.Write a c program to calculate the area of a rectangle.<br>
+6.Write a c program to calculate the area of a circle.<br>
+7.Write a c program to convert Celsius temperature to Fahrenheit temperature.<br>
+8.Write a c program to convert Fahrenheit temperature to Celsius temperature.<br>
+9.Write a c program to swap two numbers.<br>
+10.Write a c program to ceil, round, and floor a floating-point number.<br>
+
+### [**Conditionals**](https://github.com/ArnobMahmud/CSE101-PSvA/tree/master/Assignment/Conditionals)
+2.Write a c program to check whether a number is even or odd.<br>
+3.Write a c program to check whether a number is positive or negative or equal to zero.<br>
+4.Write a c program to find the largest between two numbers.<br>
+5.Write a c program to find the smallest among three numbers.<br>
+6.Write a c program to check whether a year is a leap year or not.<br>
+7.Write a c program to check whether a student has passed (40%) or failed from a given mark.<br>
+8.Write a c program to calculate the grade points of a student for a particular subject from the given mark using the following table:<br>
+    90% and above           4.0<br>
+    80% to below 90%        3.5<br>
+    70% to below 80%        3.0<br>
+    60% to below 70%        2.5<br>
+    50% to below 60%        2.0<br>
+    Below 50%               0.0<br>
+
+9.Write a c program to check whether a character is a capital letter or a small letter or others.<br>
+10.Write a c program to check whether a character is a vowel or consonant or digit or white space or special character.<br>
+12.Write a c program to spell a digit using switch.<br>
+13.Write a c program to check whether a character is vowel or consonant using switch.<br>
+14.Write a c program to implement a calculator (+, -, *, /, %) using switch.<br>
+15.Write a c program to implement a menu based temperature conversion using switch.<br>
+
+### [**Loops**](https://github.com/ArnobMahmud/CSE101-PSvA/tree/master/Assignment/Loops)
+1.Answer the following questions with appropriate examples and flowcharts:<br>
+ (a) How does a for loop work?<br>
+ (b) How does a while loop work?<br>
+ (c) How does a do-while loop work?<br>
+ (d) How does the goto statement work?<br>
+ (e) How does the break statement work?<br>
+ (f) How does the continue statement work?<br>
+
+2.Write a c program to print the sum of the following series:<br>
+ (a) 1 + 2 + 3 + . . . . + N<br>
+ (b) 1^2 + 3^2 + 5^2 + . . . . + N^2<br>
+ (c) 2^2 * 4^2 * 6^2 * . . . . * N^2<br>
+ (d) 1 + 1/2 + 1/3 + . . . . + 1/N<br>
+ (e) 1 - 2 + 3 - 4 + 5 - 6 + . . . . + N<br>
+ (f) 1 * 2 + 2 * 3 + 3 * 4 + . . . . + n1 * n2<br>
+ (g) 1 * 3 * 4 + 2 * 5 * 6 + 3 * 7 * 8 + . . . . + n1 * n2 * n3<br>
+ (h) 1 + 5 + 9 + . . . . + Nth number<br>
+ (i) 1 + 2 + 4 + 5 + 7 + 8 + . . . . + N<br>
+ (j) 60 + 57 + 54 + . . . . >=1<br>
+
+3.Write a c program to calculate the sum of the Fibonacci series upto N-th term:<br>
+	0 + 1 + 1 + 2 + 3 + 5 + 8 + . . . . + Nth term<br>
+
+4.Write a c program to calculate the factorial of a number.<br>
+5.Write a c program to calculate the GCD and LCM of two numbers.<br>
+6.Write a c program to check whether a number is prime or not.<br>
+7.Write a c program to print the prime numbers within a range.<br>
+8.Write a c program to count the number of digits of a number.<br>
+9.Write a c program to calculate the sum of digits of a number.<br>
+10.Write a c program to reverse a number.<br>
+11.Write a c program to check whether a number is a palindrome or not.<br>
+12.Write a c program to print the palindrome numbers within a range.<br>
+13.Write a c program to check whether a number is an Armstrong number or not.<br>
+14.Write a c program to print the Armstrong numbers within a range.<br>
+15.Write a c program to check whether a number is a Strong number or not.<br>

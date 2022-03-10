@@ -9,22 +9,19 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, temp, rem, ll, ul, res, count;
+    int N, count, rem, temp, res, arc = 0;
 
-    printf("Enter lower limit : ");
-    scanf("%d", &ll);
+    printf("Enter Nth number : ");
+    scanf("%d", &N);
 
-    printf("Enter upper limit : ");
-    scanf("%d", &ul);
-
-    for (int i = ll; i <= ul; i++)
+    for (int i = 1; i > 0; i++)
     {
         temp = i;
         count = 0;
         while (temp != 0)
         {
-            temp /= 10;
             count++;
+            temp /= 10;
         }
 
         temp = i;
@@ -38,7 +35,14 @@ int main(int argc, char const *argv[])
 
         if (res == i)
         {
-            printf("%d ", res);
+            arc++;
+            printf("%d ", i);
+        }
+
+        if (N == arc)
+        {
+            printf("\n%dth armstrong number is : %d", N, i);
+            break;
         }
     }
     return 0;

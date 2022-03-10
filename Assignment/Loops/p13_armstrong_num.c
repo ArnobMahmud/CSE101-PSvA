@@ -13,8 +13,7 @@ int main(int argc, char const *argv[])
 
     printf("Enter a number : ");
     scanf("%d", &n);
-    
-    res = 0;
+
     count = 0;
     temp = n;
     while (temp != 0)
@@ -24,6 +23,7 @@ int main(int argc, char const *argv[])
     }
 
     temp = n;
+    res = 0;
     while (temp != 0)
     {
         rem = temp % 10;
@@ -39,4 +39,6 @@ int main(int argc, char const *argv[])
     {
         printf("Armstrong.\n");
     }
+
+    return 0;
 }

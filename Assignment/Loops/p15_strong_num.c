@@ -15,7 +15,6 @@ int main(int argc, char const *argv[])
     scanf("%d", &n);
 
     temp = n;
-
     while (temp != 0)
     {
         rem = temp % 10;

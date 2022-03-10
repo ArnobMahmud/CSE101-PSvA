@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, temp, ll, ul, rem, res, count;
+    int n, temp, ll, ul, rem, rev;
 
     printf("Enter lower limit : ");
     scanf("%d", &ll);
@@ -19,20 +19,19 @@ int main(int argc, char const *argv[])
 
     for (int i = ll; i <= ul; i++)
     {
-        count = 0;
         temp = i;
-        res = 0;
+        rev = 0;
 
         while (temp != 0)
         {
             rem = temp % 10;
-            res = res * 10 + rem;
+            rev = rev * 10 + rem;
             temp /= 10;
         }
 
-        if (res == i)
+        if (rev == i)
         {
-            printf("%d ", res);
+            printf("%d ", rev);
         }
     }
     return 0;

@@ -36,7 +36,7 @@ int main(int argc, char const *argv[])
 
         if (count == N)
         {
-            printf("\n%dth prime number is : %d\n", N, i);
+            printf("\n%dth prime number is %d.\n", N, i);
             break;
         }
     }

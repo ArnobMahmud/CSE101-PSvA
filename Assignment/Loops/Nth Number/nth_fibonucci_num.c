@@ -12,24 +12,30 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, a = 0, b = 1, c, sum = 0;
+    int n, a = 0, b = 1, c = 0;
 
-    printf("Enter N : ");
-    scanf("%d", &n);
+    printf("Enter the nth value: ");
+    scanf("%d", &n); // 6
 
-    for (int i = 1; i <= n; i++)
+    if (n == 1)
     {
-        c = a + b;
-
-        printf("%d ", a);
-        sum += a;
-
-        a = b;
-        b = c;
+        printf("%dst value of fibonucci series is %d.\n", n, a);
     }
-
-    printf("\n%dth fibonucci number is : %d", n, a - 1);
-    printf("\nSum is %d.", sum);
+    else if (n == 2)
+    {
+        printf("%dnd value of fibonucci series is %d.\n", n, b);
+    }
+    else
+    {
+        c = a + b; // 0 + 1 -> 1
+        for (int i = 3; i <= n; i++)
+        {
+            a = b;     // 1 -> 1 -> 2 -> 3
+            b = c;     // 1 -> 2 -> 3 -> 5
+            c = a + b; // 2 -> 3 -> 5 -> 8
+        }
+        printf("%dth value of fibonucci series is %d.\n", n, b); // 5
+    }
 
     return 0;
 }

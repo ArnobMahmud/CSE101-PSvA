@@ -1,5 +1,5 @@
 /*
-    Qn :            1 2 3 4 5 6 7 8 9 153 ........... Nth
+    Qn :            1 2 145 40585
 */
 
 /*
@@ -13,7 +13,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int N, count, rem, temp, res, arc = 0;
+    int N, fact, count = 0, temp, rem, res;
 
     printf("Enter Nth number : ");
     scanf("%d", &N);
@@ -21,33 +21,33 @@ int main(int argc, char const *argv[])
     for (int i = 1; i > 0; i++)
     {
         temp = i;
-        count = 0;
-        while (temp != 0)
-        {
-            count++;
-            temp /= 10;
-        }
-
-        temp = i;
         res = 0;
         while (temp != 0)
         {
             rem = temp % 10;
-            res += pow(rem, count);
+
+            fact = 1;
+            for (int i = 1; i <= rem; i++)
+            {
+                fact *= i;
+            }
+
+            res += fact;
             temp /= 10;
         }
 
         if (res == i)
         {
-            arc++;
+            count++;
             printf("%d ", i);
         }
 
-        if (N == arc)
+        if (count == N)
         {
-            printf("\n%dth armstrong number is : %d", N, i);
+            printf("\n%dth strong number is : %d", N, i);
             break;
         }
     }
+
     return 0;
 }

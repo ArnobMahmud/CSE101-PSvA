@@ -9,20 +9,20 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, temp, rem, res, count;
+    int num, temp, rem, res, count;
 
     printf("Enter a number : ");
-    scanf("%d", &n);
+    scanf("%d", &num);
 
     count = 0;
-    temp = n;
+    temp = num;
     while (temp != 0)
     {
         temp /= 10;
         count++;
     }
 
-    temp = n;
+    temp = num;
     res = 0;
     while (temp != 0)
     {
@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
         temp /= 10;
     }
 
-    if (res != n)
+    if (res != num)
     {
         printf("Not Armstrong.\n");
     }

@@ -1,3 +1,12 @@
+/*  Qn :
+    Write a c program to input the value of N and print the sum of the following series:
+
+                1 + 1/3! + 1/5! + 1/7! + . . . + 1/𝑁!
+
+                        Sample Input     Sample Output
+                            7              1.175198
+*/
+
 /*
     Author : Arnob Mahmud
 
@@ -10,7 +19,7 @@
 int main(int argc, char const *argv[])
 {
     int N, fact;
-    float sum = 0.0;
+    float sum = 0;
 
     printf("Enter N : ");
     scanf("%d", &N);
@@ -22,7 +31,7 @@ int main(int argc, char const *argv[])
         {
             fact *= j;
         }
-        // printf("1/%d", fact);
+        // printf("1/%d! + ", i);
         sum += (1.0 / fact);
     }
 

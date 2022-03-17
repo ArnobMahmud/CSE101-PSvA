@@ -7,6 +7,5 @@ int main()
     {
         printf("%d\n", i);
     }
-    //printf("%d", i = i++);
     printf("%d\n", i);
 }

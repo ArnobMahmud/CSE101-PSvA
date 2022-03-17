@@ -15,8 +15,8 @@ int main(int argc, char const *argv[])
 
     while (num != 0)
     {
-        count++;
         num /= 10;
+        count++;
     }
 
     printf("Total digit in num is : %d", count);

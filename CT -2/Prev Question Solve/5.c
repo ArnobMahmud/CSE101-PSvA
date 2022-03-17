@@ -22,7 +22,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int ll, ul, fact;
+    int ll, ul, fctr;
 
     printf("Enter lower limit : ");
     scanf("%d", &ll);
@@ -32,15 +32,15 @@ int main(int argc, char const *argv[])
 
     for (int i = ll; i <= ul; i++)
     {
-        fact = 0;
+        fctr = 0;
         for (int j = 1; j < i; j++)
         {
             if (i % j == 0)
             {
-                fact += j;
+                fctr += j;
             }
         }
-        if (fact == i)
+        if (fctr == i)
         {
             printf("%d\t", i);
         }

@@ -1,3 +1,12 @@
+/*  Qn :
+    Write a c program to input the value of N and print the sum of the following series:
+       
+        9^-1 + 98^−1 + 997^−1 + 9996^−1 + . . . + Nth term
+
+                Sample Input      Sample Output
+                    5               0.122533
+*/
+
 /*
     Author : Arnob Mahmud
 

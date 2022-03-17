@@ -16,7 +16,6 @@
 */
 
 #include <stdio.h>
-#include <math.h>
 
 int main(int argc, char const *argv[])
 {
@@ -31,7 +30,7 @@ int main(int argc, char const *argv[])
         sum += i;
         d++;
     }
-    printf("Sum is %d", sum);
+    printf("\nSum is %d", sum);
 
     return 0;
 }

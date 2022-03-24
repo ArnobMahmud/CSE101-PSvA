@@ -5,15 +5,15 @@
 */
 
 #include <stdio.h>
-#include <math.h>
 
 int main(int argc, char const *argv[])
 {
-    int d = 0;
-    for (int i = -12; i >= -42; -d)
+    for (int i = 1; i <= 100; i++)
     {
-        printf("%d ", i);
-        d *= 2;
+        if (i % 2 != 0 && i % 3 != 0)
+        {
+            printf("%d\n", i);
+        }
     }
 
     return 0;

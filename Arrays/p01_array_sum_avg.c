@@ -22,8 +22,11 @@ int main(int argc, char const *argv[])
 
     for (int i = 0; i < size; i++)
     {
-        sum += arr[i];
-        avg = sum / size;
+        if (arr[i] > 0)
+        {
+            sum += arr[i];
+            avg = sum / size;
+        }
     }
 
     printf("Sum is %d.\n", sum);

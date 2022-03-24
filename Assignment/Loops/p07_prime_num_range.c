@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
                 break;
             }
         }
-        if (flag == 0)
+        if (flag == 0 && i > 1)
         {
             pc++;
             printf("%d ", i);

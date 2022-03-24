@@ -10,7 +10,7 @@
 int main(int argc, char const *argv[])
 {
     printf("2^n\t\tn\t\t\t1/2^n\n");
-    printf("\t--------------------------\n");
+    printf("\t------------------------------------\n");
 
     for (int i = 0; i <= 20; i++)
     {

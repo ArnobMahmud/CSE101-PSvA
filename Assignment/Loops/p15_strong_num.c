@@ -15,9 +15,9 @@ int main(int argc, char const *argv[])
     scanf("%d", &n);
 
     temp = n;
-    while (temp != 0)
+    while (n != 0)
     {
-        rem = temp % 10;
+        rem = n % 10;
 
         fact = 1;
         for (int i = 1; i <= rem; i++)
@@ -26,10 +26,10 @@ int main(int argc, char const *argv[])
         }
 
         res += fact;
-        temp /= 10;
+        n /= 10;
     }
 
-    if (res != n)
+    if (res != temp)
     {
         printf("Not Strong.\n");
     }

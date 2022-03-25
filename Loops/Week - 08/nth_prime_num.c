@@ -1,45 +1,33 @@
-/*
-    Qn:      2 3 5 7 11 13 17 19 ................... Nth
-*/
-
-/*
-    Author : Arnob Mahmud
-
-    mail : arnob.tech.me@gmail.com
-*/
-
 #include <stdio.h>
+#include <math.h>
 
 int main(int argc, char const *argv[])
 {
-    int N, flag, count = 0;
+    int i, N, count = 0, num = 2, letest = 0, flag;
 
-    printf("Enter nth number : ");
+    printf("Enter Nth Number : ");
     scanf("%d", &N);
 
-    for (int i = 2; i > 0; i++)
+    while (count != N)
     {
         flag = 0;
-        for (int j = 2; j <= i / 2; j++)
+        for (i = 2; i <= num / 2; i++)
         {
-            if (i % j == 0)
+            if (num % i == 0)
             {
                 flag = 1;
                 break;
             }
         }
-        if (flag != 1)
+        if (flag == 0)
         {
             count++;
-            printf("%d ", i);
+            letest = num;
         }
-
-        if (count == N)
-        {
-            printf("\n%dth prime number is : %d\n", N, i);
-            break;
-        }
+        num++;
     }
+
+    printf("%dth prime number is %d ", N, letest);
 
     return 0;
 }

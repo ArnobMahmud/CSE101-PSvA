@@ -38,7 +38,7 @@ int main(int argc, char const *argv[])
 
         if (res == i)
         {
-            printf("%d ", res);
+            printf("%d ", i);
         }
     }
     return 0;

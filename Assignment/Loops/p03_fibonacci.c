@@ -23,7 +23,6 @@ int main(int argc, char const *argv[])
         fst = scd;
         scd = nxt;
     }
-    // printf("\n%d ", fst);
 
     printf("\nSum is %d\n", sum);
 

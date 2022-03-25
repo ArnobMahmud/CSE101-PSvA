@@ -5,7 +5,7 @@
 
                                      (nCk) = n!/r!(n-k)!
 
-                                      Input             Output
+                                    Sample Input      Sample Output
                                       10 6               210
                                        6 2                15
 */

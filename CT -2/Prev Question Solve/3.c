@@ -1,9 +1,9 @@
 /*  Qn :
     Write a c program to take a number as input and print the sum of first digit and last
     of a number.
-                            Input             Output
-                            123                 4
-                            2020                2
+                            Sample Input            Sample Output
+                               123                       4
+                              2020                       2
 */
 
 /*

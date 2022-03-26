@@ -8,18 +8,22 @@
 
 int main(int argc, char const *argv[])
 {
-    int arr1[10], arr2[10];
+    int A[100], Ac[100], n;
 
-    printf("Enter 5 numbers : ");
-    for (int i = 0; i < 5; i++)
+    printf("Enter array size : ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements  : ", n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr1[i]);
+        scanf("%d", &A[i]);
     }
 
-    for (int i = 0; i < 5; i++)
+    printf("Printing from coppied array : ", n);
+    for (int i = 0; i < n; i++)
     {
-        arr2[i] = arr1[i];
-        printf("%d ", arr2[i]);
+        Ac[i] = A[i];
+        printf("%d ", Ac[i]);
     }
 
     return 0;

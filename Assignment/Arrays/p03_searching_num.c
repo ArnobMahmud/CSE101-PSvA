@@ -8,21 +8,23 @@
 
 int main(int argc, char const *argv[])
 {
-    int arr[10], num, pos = -1;
+    int A[100], num, pos = -1, n;
 
-    printf("Enter 5 numbers : ");
+    printf("Enter array size : ");
+    scanf("%d", &n);
 
-    for (int i = 0; i < 5; i++)
+    printf("Enter %d elements  : ", n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &A[i]);
     }
 
     printf("Which number you want to search ? : ");
     scanf("%d", &num);
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (num == arr[i])
+        if (num == A[i])
         {
             pos = i + 1;
             break;

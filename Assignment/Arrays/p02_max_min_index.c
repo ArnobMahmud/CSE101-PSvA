@@ -8,27 +8,29 @@
 
 int main(int argc, char const *argv[])
 {
-    int arr[100], max, min, c1 = 0, c2 = 0;
+    int A[100], max, min, c1 = 0, c2 = 0, n;
 
-    printf("Enter 5 numbers : ");
+    printf("Enter array size : ");
+    scanf("%d", &n);
 
-    for (int i = 0; i < 5; i++)
+    printf("Enter %d elements  : ", n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &A[i]);
     }
 
-    max = min = arr[0];
+    max = min = A[0];
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (max < arr[i])
+        if (max < A[i])
         {
-            max = arr[i];
+            max = A[i];
             c1 = i;
         }
-        if (min > arr[i])
+        if (min > A[i])
         {
-            min = arr[i];
+            min = A[i];
             c2 = i;
         }
     }

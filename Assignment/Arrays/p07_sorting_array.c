@@ -8,26 +8,34 @@
 
 int main(int argc, char const *argv[])
 {
-    int arr[10], num;
+    int A[100], temp, n;
 
-    printf("Enter 5 numbers : ");
-    for (int i = 0; i < 5; i++)
+    printf("Enter array size : ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements  : ", n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &A[i]);
     }
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        for (int j = i + 1; j < 5; j++)
+        for (int j = i + 1; j < n; j++)
         {
-            if (arr[i] > arr[j])
+            if (A[j] < A[i])
             {
-                num = arr[i];
-                arr[i] = arr[j];
-                arr[j] = num;
+                temp = A[i];
+                A[i] = A[j];
+                A[j] = temp;
             }
         }
-        printf("%d ", arr[i]);
     }
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", A[i]);
+    }
+
     return 0;
 }

@@ -90,3 +90,20 @@
 13.Write a c program to check whether a number is an Armstrong number or not.<br>
 14.Write a c program to print the Armstrong numbers within a range.<br>
 15.Write a c program to check whether a number is a Strong number or not.<br>
+
+### [**Arrays**](https://github.com/ArnobMahmud/CSE101-PSvA/tree/master/Assignment/Arrays)
+1.Write a c program to calculate the sum and average of an array.<br>
+2.Write a c program to find both values and indexes of maximum and minimum elements of an array.<br>
+3.Write a c program to search a number in an array. It will print the index of the element, if it is found. Otherwise, it will print “Not found.”  <br>
+4.Write a c program to count the frequency of a number in an array.<br>
+5.Write a c program to copy an array to another array.<br>
+6.Write a c program to reverse an array.<br>
+7.Write a c program to sort an array.<br>
+8.Write a c program to calculate the sum and average of a 2D array.<br>
+9.Write a c program to find both values and indexes of maximum and minimum elements of a 2D array.<br>
+10.Write a c program to calculate the sum of diagonal elements of a matrix.<br>
+11.Write a c program to multiply a matrix by a factor.<br>
+12.Write a c program to transpose a matrix, i.e., A’. Given, A = {{1, 2}, {2, 4}}.<br>
+13.Write a c program to add two matrices. If A and B are two matrices, the sum of these matrices, C = A + B.<br>
+14.Write a c program to subtract two matrices. If A and B are two matrices, the difference of these matrices, C = A - B.<br>
+15.Write a c program to multiply two matrices. If A and B are two matrices, the product of these matrices, C = A * B. Given, A={{1, 2}, {1, 2}} and B = {{2, 1}, {2, 1}}.<br>

@@ -8,17 +8,20 @@
 
 int main(int argc, char const *argv[])
 {
-    int arr[10], num;
+    int A[10], num, n;
 
-    printf("Enter 5 numbers : ");
-    for (int i = 0; i < 5; i++)
+    printf("Enter array size : ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements  : ", n);
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &A[i]);
     }
 
-    for (int i = 4; i >= 0; i--)
+    for (int i = n - 1; i >= 0; i--)
     {
-        printf("%d ", arr[i]);
+        printf("%d ", A[i]);
     }
 
     return 0;

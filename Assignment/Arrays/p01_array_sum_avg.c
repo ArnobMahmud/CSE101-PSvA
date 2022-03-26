@@ -8,24 +8,24 @@
 
 int main(int argc, char const *argv[])
 {
-    int arr[50], size, sum = 0;
+    int A[100], n, sum = 0;
     float avg;
 
     printf("Declare array size : ");
-    scanf("%d", &size);
+    scanf("%d", &n);
 
     printf("Enter elements : ");
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &arr[i]);
+        scanf("%d", &A[i]);
     }
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] > 0)
+        if (A[i] > 0)
         {
-            sum += arr[i];
-            avg = sum / size;
+            sum += A[i];
+            avg = sum / n;
         }
     }
 

@@ -8,19 +8,19 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, temp = 0, rem = 0, oct = 0, i = 1;
+    int dec, temp = 0, rem = 0, oct = 0, base = 1;
 
     printf("Enter a decimal number : ");
-    scanf("%d", &num);
+    scanf("%d", &dec);
 
-    temp = num;
+    temp = dec;
 
-    while (num != 0)
+    while (dec != 0)
     {
-        rem = num % 8;
-        num /= 8;
-        oct += rem * i;
-        i *= 10;
+        rem = dec % 8;
+        oct += rem * base;
+        base *= 10;
+        dec /= 8;
     }
 
     printf("%d in octal is %d.", temp, oct);

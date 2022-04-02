@@ -8,20 +8,20 @@
 
 int main(int argc, char const *argv[])
 {
-    int i, N, nxt, sum = 0, fst = 0, scd = 1;
+    int i, N, c, sum = 0, a = 0, b = 1;
 
     printf("Enter N : ");
     scanf("%d", &N);
 
     for (int i = 1; i <= N; i++)
     {
-        printf("%d ", fst);
+        printf("%d ", a);
 
-        nxt = fst + scd;
-        sum += fst;
+        c = a + b;
+        sum += a;
         
-        fst = scd;
-        scd = nxt;
+        a = b;
+        b = c;
     }
 
     printf("\nSum is %d\n", sum);

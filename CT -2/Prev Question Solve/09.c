@@ -16,16 +16,16 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, oct = 0, rem = 0, i = 1;
+    int num, oct = 0, rem = 0, base = 1;
 
     scanf("%d", &num);
 
     while (num != 0)
     {
         rem = num % 8;
+        oct += rem * base;
+        base *= 10;
         num /= 8;
-        oct += rem * i;
-        i *= 10;
     }
 
     printf("%d", oct);

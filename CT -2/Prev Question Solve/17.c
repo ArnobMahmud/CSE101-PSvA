@@ -16,26 +16,40 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, rem, even_sum = 0, odd_sum = 0;
+    int num, rem, count = 0, temp, even_sum = 0, odd_sum = 0;
 
     scanf("%d", &num);
 
-    while (num != 0)
+    temp = num;
+    while (temp != 0)
     {
-        rem = num % 10;
-        if (rem % 2 == 0)
-        {
-            even_sum += rem;
-        }
-        else
-        {
-            odd_sum += rem;
-        }
-        num /= 10;
+        temp /= 10;
+        count++;
     }
 
-    printf("Sum of odd digits = %d\n", odd_sum);
-    printf("Sum of even digits = %d", even_sum);
+    if (count == 10)
+    {
+        while (num != 0)
+        {
+            rem = num % 10;
+            if (rem % 2 == 0)
+            {
+                even_sum += rem;
+            }
+            else
+            {
+                odd_sum += rem;
+            }
+            num /= 10;
+        }
+
+        printf("Sum of odd digits = %d\n", odd_sum);
+        printf("Sum of even digits = %d", even_sum);
+    }
+    else
+    {
+        printf("Invalid mobile number.");
+    }
 
     return 0;
 }

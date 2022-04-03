@@ -2,10 +2,12 @@
 
 int main()
 {
-    int i;
-    for (i = 0; i <= 5; i+=2/3)
+    int a = 0, i = 0;
+    for (; i < 7;)
     {
-        printf("%d\n", i);
+        i = i + 5;
+        a = a + i;
+        i -= 3;
     }
-    printf("%d\n", i);
+    printf("i = %d, a = %d\n", i, a);
 }

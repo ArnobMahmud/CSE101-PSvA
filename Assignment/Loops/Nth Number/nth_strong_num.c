@@ -13,12 +13,12 @@
 
 int main(int argc, char const *argv[])
 {
-    int N, fact, count = 0, temp, rem, res;
+    int i, j, N, fact, count = 0, temp, rem, res;
 
     printf("Enter Nth number : ");
     scanf("%d", &N);
 
-    for (int i = 1; i > 0; i++)
+    for (i = 1; count != N; i++)
     {
         temp = i;
         res = 0;
@@ -27,9 +27,9 @@ int main(int argc, char const *argv[])
             rem = temp % 10;
 
             fact = 1;
-            for (int i = 1; i <= rem; i++)
+            for (j = 1; j <= rem; j++)
             {
-                fact *= i;
+                fact *= j;
             }
 
             res += fact;
@@ -38,16 +38,11 @@ int main(int argc, char const *argv[])
 
         if (res == i)
         {
-            count++;
             printf("%d ", i);
-        }
-
-        if (count == N)
-        {
-            printf("\n%dth strong number is : %d", N, i);
-            break;
+            count++;
         }
     }
+    printf("\n%dth strong number is : %d", N, i - 1);
 
     return 0;
 }

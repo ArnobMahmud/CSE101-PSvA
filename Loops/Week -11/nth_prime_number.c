@@ -12,18 +12,17 @@
 
 int main(int argc, char const *argv[])
 {
-    int i, j, N, flag, count = 0;
+    int i, j, N, flag, pc = 0;
 
-    printf("Enter nth number : ");
+    printf("Enter nth value : ");
     scanf("%d", &N);
 
     /* By while Loop*/
-
     i = 2;
-    while (count != N)
+    while (pc != N)
     {
         flag = 0;
-        for (j = 2; j <= i / 2; j++)
+        for (int j = 2; j <= i / 2; j++)
         {
             if (i % j == 0)
             {
@@ -35,7 +34,7 @@ int main(int argc, char const *argv[])
         if (flag != 1)
         {
             printf("%d ", i);
-            count++;
+            pc++;
         }
 
         i++;
@@ -43,10 +42,10 @@ int main(int argc, char const *argv[])
     printf("\n%dth prime number is %d.\n", N, i - 1);
 
     /* By for Loop*/
-    /* for (i = 2; count != N; i++)
+    /* for (i = 2; pc != N; i++)
      {
          flag = 0;
-         for (j = 2; j <= i / 2; j++)
+         for (j = 2; j < i; j++)
          {
              if (i % j == 0)
              {
@@ -57,7 +56,7 @@ int main(int argc, char const *argv[])
          if (flag != 1)
          {
              printf("%d ", i);
-             count++;
+             pc++;
          }
      }
      printf("\n%dth prime number is %d.\n", N, i - 1); */

@@ -1,8 +1,4 @@
 /*
-    Qn :            1 2 3 4 5 6 7 8 9 153 ........... Nth
-*/
-
-/*
     Author : Arnob Mahmud
 
     mail : arnob.tech.me@gmail.com
@@ -13,37 +9,40 @@
 
 int main(int argc, char const *argv[])
 {
-    int i, N, count, rem, temp, res, arc = 0;
+    int i, n, count, rem, temp, sum, arc;
 
-    printf("Enter Nth number : ");
-    scanf("%d", &N);
+    scanf("%d", &n);
 
-    for (i = 1; arc != N; i++)
+    i = 1;
+    while (arc != n) // for manually(without user input) change the value of n to get exact armstrong number.
     {
         temp = i;
         count = 0;
         while (temp != 0)
         {
-            count++;
             temp /= 10;
+            count++;
         }
 
         temp = i;
-        res = 0;
+        sum = 0;
         while (temp != 0)
         {
             rem = temp % 10;
-            res += pow(rem, count);
+            sum += pow(rem, count);
             temp /= 10;
         }
 
-        if (res == i)
+        if (sum == i)
         {
             printf("%d ", i);
             arc++;
         }
+
+        i++;
     }
-    printf("\n%dth armstrong number is : %d", N, i - 1);
+
+    printf("\n%dth armstrong number : %d", n, i - 1);
 
     return 0;
 }

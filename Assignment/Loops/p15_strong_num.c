@@ -37,4 +37,6 @@ int main(int argc, char const *argv[])
     {
         printf("Strong.\n");
     }
+
+    return 0;
 }

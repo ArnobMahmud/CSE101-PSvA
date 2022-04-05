@@ -12,12 +12,12 @@
 
 int main(int argc, char const *argv[])
 {
-    int N, count = 0, rev, rem, temp;
+    int i, N, count = 0, rev, rem, temp;
 
     printf("Enter Nth no : ");
     scanf("%d", &N);
 
-    for (int i = 1; i > 0; i++)
+    for (i = 1; count != N; i++)
     {
         temp = i;
         rev = 0;
@@ -30,15 +30,12 @@ int main(int argc, char const *argv[])
 
         if (rev == i)
         {
-            count++;
             printf("%d ", i);
-        }
-        if (count == N)
-        {
-            printf("\n%dth palindrome number is : %d", N, i);
-            break;
+            count++;
         }
     }
+
+    printf("\n%dth palindrome number is : %d", N, i - 1);
 
     return 0;
 }

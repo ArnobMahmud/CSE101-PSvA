@@ -7,7 +7,6 @@
 
              Sample input         Sample output
                 100                     44
-
 */
 
 /*
@@ -20,22 +19,28 @@
 
 int main(int argc, char const *argv[])
 {
-    int n, a = 1, b = 2, c = 0, sum = 0;
+    int a = 1, b = 2, c = 0, n, sum = 0;
 
+    printf("Enter n : ");
     scanf("%d", &n);
+
+    printf("%d %d ", a, b);
+    c = a + b;
 
     while (c <= n)
     {
-        printf("%d ", a);
-        if (b % 2 == 0)
-        {
-            sum += b;
-        }
-        c = a + b;
+        printf("%d ", c);
         a = b;
         b = c;
+        c = a + b;
+
+        if (a % 2 == 0)
+        {
+            sum += a;
+        }
     }
-    printf("\nSum = %d", sum);
-    
+
+    printf("\nSum : %d", sum);
+
     return 0;
 }

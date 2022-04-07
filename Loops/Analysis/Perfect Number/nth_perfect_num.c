@@ -5,19 +5,14 @@
 */
 
 #include <stdio.h>
-#include <math.h>
 
 int main(int argc, char const *argv[])
 {
-    int ll, ul, fctr, pfc = 0;
+    int i, n, fctr, pfc = 0;
+    scanf("%d", &n);
 
-    printf("Enter lower limit : ");
-    scanf("%d", &ll);
-
-    printf("Enter upper limit : ");
-    scanf("%d", &ul);
-
-    for (int i = ll; i <= ul; i++)
+    i = 1;
+    while (n != pfc)
     {
         fctr = 0;
         for (int j = 1; j < i; j++)
@@ -27,13 +22,15 @@ int main(int argc, char const *argv[])
                 fctr += j;
             }
         }
-        if (fctr == i)
+
+        if (i == fctr)
         {
-            printf("%d\t", i);
             pfc++;
         }
+        i++;
     }
-    printf("\nTotal perfect number : %d", pfc);
+
+    printf("%dth perfect number is %d", n, i - 1);
 
     return 0;
 }

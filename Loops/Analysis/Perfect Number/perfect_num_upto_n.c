@@ -9,15 +9,11 @@
 
 int main(int argc, char const *argv[])
 {
-    int ll, ul, fctr, pfc = 0;
+    int n, fctr, pfc = 0;
 
-    printf("Enter lower limit : ");
-    scanf("%d", &ll);
+    scanf("%d", &n);
 
-    printf("Enter upper limit : ");
-    scanf("%d", &ul);
-
-    for (int i = ll; i <= ul; i++)
+    for (int i = 1; i <= n; i++)
     {
         fctr = 0;
         for (int j = 1; j < i; j++)
@@ -29,7 +25,7 @@ int main(int argc, char const *argv[])
         }
         if (fctr == i)
         {
-            printf("%d\t", i);
+            printf("%d ", i);
             pfc++;
         }
     }

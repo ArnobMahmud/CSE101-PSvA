@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int i, n, count, rem, temp, sum, arc;
+    int i, n, count, rem, temp, sum, arc = 0;
 
     scanf("%d", &n);
 

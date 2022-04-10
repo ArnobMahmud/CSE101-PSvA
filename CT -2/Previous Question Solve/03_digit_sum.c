@@ -17,18 +17,16 @@
 
 int main(int argc, char const *argv[])
 {
-    int N, temp, rem, sum = 0;
+    int N, rem, sum = 0;
 
     printf("Enter N :");
     scanf("%d", &N);
 
-    temp = N; //=> 2020
-
     sum = N % 10; //=> 2020 % 10 => 0
-    while (temp != 0)
+    while (N != 0)
     {
-        rem = temp % 10; //=> 0 -> 2 -> 0 -> 2
-        temp /= 10;      //=> 202 -> 20 -> 2 -> 0
+        rem = N % 10; //=> 0 -> 2 -> 0 -> 2
+        N /= 10;      //=> 202 -> 20 -> 2 -> 0
     }
 
     sum += rem;                 //=> 0 + 2

@@ -1,0 +1,15 @@
+1.Write a c program to calculate the sum and average of an array.
+2.Write a c program to find both values and indexes of maximum and minimum elements of an array.
+3.Write a c program to search a number in an array. It will print the index of the element, if it is found. Otherwise, it will print “Not found.”
+4.Write a c program to count the frequency of a number in an array.
+5.Write a c program to copy an array to another array.
+6.Write a c program to reverse an array.
+7.Write a c program to sort an array.
+8.Write a c program to calculate the sum and average of a 2D array.
+9.Write a c program to find both values and indexes of maximum and minimum elements of a 2D array.
+10.Write a c program to calculate the sum of diagonal elements of a matrix.
+11.Write a c program to multiply a matrix by a factor.
+12.Write a c program to transpose a matrix, i.e., A’. Given, A = {{1, 2}, {2, 4}}.
+13.Write a c program to add two matrices. If A and B are two matrices, the sum of these matrices, C = A + B.
+14.Write a c program to subtract two matrices. If A and B are two matrices, the difference of these matrices, C = A - B.
+15.Write a c program to multiply two matrices. If A and B are two matrices, the product of these matrices, C = A * B. Given, A={{1, 2}, {1, 2}} and B = {{2, 1}, {2, 1}}.

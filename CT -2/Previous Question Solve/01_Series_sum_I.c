@@ -1,6 +1,6 @@
 /*  Qn :
     Write a c program to input the value of N and print the sum of the following series:
-       
+
         9^-1 + 98^−1 + 997^−1 + 9996^−1 + . . . + Nth term
 
                 Sample Input      Sample Output
@@ -18,7 +18,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int N, num;
+    int N;
     float sum = 0.0;
 
     printf("Enter N : ");
@@ -26,8 +26,7 @@ int main(int argc, char const *argv[])
 
     for (int i = 1; i <= N; i++)
     {
-        num = pow(10, i) - i;
-        sum += (1.0 / num);
+        sum += 1.0 / (pow(10, i) - i);
     }
 
     printf("Sum is %f", sum);

@@ -36,14 +36,14 @@ int main(int argc, char const *argv[])
             fact_n *= i;
         }
 
-        for (int j = 1; j <= k; j++)
+        for (int i = 1; i <= k; i++)
         {
-            fact_k *= j;
+            fact_k *= i;
         }
 
-        for (int m = 1; m <= (n - k); m++)
+        for (int i = 1; i <= (n - k); i++)
         {
-            fact_n_k *= m;
+            fact_n_k *= i;
         }
 
         nCk = fact_n / (fact_k * fact_n_k);

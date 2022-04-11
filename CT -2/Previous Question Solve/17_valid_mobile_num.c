@@ -16,9 +16,10 @@
 
 int main(int argc, char const *argv[])
 {
-    int num, rem, count = 0, temp, even_sum = 0, odd_sum = 0;
+    long long int num;
+    int rem, count = 0, temp, even_sum = 0, odd_sum = 0;
 
-    scanf("%d", &num);
+    scanf("%lld", &num);
 
     temp = num;
     while (temp != 0)

@@ -17,7 +17,7 @@
 int main(int argc, char const *argv[])
 {
 
-    int n, fact, sum = 0, x = 0, y = 0;
+    int n, fact, sum = 0;
 
     scanf("%d", &n);
 
@@ -30,13 +30,12 @@ int main(int argc, char const *argv[])
             {
                 fact *= j;
             }
-            x += fact;
+            sum += fact;
         }
         else
         {
-            y += i;
+            sum += i;
         }
-        sum = x + y;
     }
     printf("%d", sum);
 

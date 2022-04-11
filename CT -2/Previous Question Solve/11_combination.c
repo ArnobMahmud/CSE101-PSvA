@@ -25,14 +25,14 @@ int main(int argc, char const *argv[])
         fact_n *= i;
     }
 
-    for (int j = 1; j <= r; j++)
+    for (int i = 1; i <= r; i++)
     {
-        fact_r *= j;
+        fact_r *= i;
     }
 
-    for (int k = 1; k <= n - r; k++)
+    for (int i = 1; i <= n - r; i++)
     {
-        fact_n_r *= k;
+        fact_n_r *= i;
     }
 
     nCr = fact_n / (fact_r * fact_n_r);

@@ -1,3 +1,15 @@
+/*  Qn :
+    Write a C program to show the common factors of three given numbers and also
+    show the summation of that common factors.
+
+             Sample Input        Sample Output
+                1 2 3                 1
+                                   Sum = 1
+
+                21 63 105          1 3 7 21
+                                   Sum = 32
+*/
+
 /*
     Author : Arnob Mahmud
 

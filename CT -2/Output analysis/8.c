@@ -1,17 +1,13 @@
 #include <stdio.h>
 
-int main()
+int main(int argc, char const *argv[])
 {
-    int i = 0;
-
-    if (i)
+    int a = 0, i;
+    for (i = 0; i <= 7;)
     {
-        printf("%d\n", i);
-        printf("Inside if");
+        i += 5;
+        a += i;
+        i -= 3;
     }
-    else
-    {
-        printf("%d\n", i);
-        printf("Inside else");
-    }
+    printf("%d", a);
 }

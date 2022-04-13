@@ -1,9 +1,9 @@
 /*  Qn :  Write a c program to calculate the sum of the following series upto Nth term:
 
-            1 + 2! + 3 + 4! + 5 + 6! + ...... + 𝑁 𝑡ℎ 𝑡𝑒𝑟𝑚
+            1/1 + 1/2! + 1/3 + 1/4! + 1/5 + 1/6! + ...... + 𝑁 𝑡ℎ 𝑡𝑒𝑟𝑚
 
             Sample Input     Sample Output
-                5                   35
+                5                2.075
 */
 
 /*
@@ -17,7 +17,8 @@
 int main(int argc, char const *argv[])
 {
 
-    int n, fact, sum = 0;
+    int n, fact;
+    float sum = 0;
 
     scanf("%d", &n);
 
@@ -30,14 +31,14 @@ int main(int argc, char const *argv[])
             {
                 fact *= j;
             }
-            sum += fact;
+            sum += (1.0 / fact);
         }
         else
         {
-            sum += i;
+            sum += (1.0 / i);
         }
     }
-    printf("%d", sum);
+    printf("%f", sum);
 
     return 0;
 }

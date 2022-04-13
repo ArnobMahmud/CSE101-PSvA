@@ -16,16 +16,27 @@ int main(int argc, char const *argv[])
 
     printf("Enter n : ");
     scanf("%d", &n);
-
-    printf("%d %d ", a, b);
-    c = a + b;
-
-    while (c <= n)
+    
+    if (n == 1)
     {
-        printf("%d ", c);
-        a = b;
-        b = c;
+        printf("%d ", a);
+    }
+    else if (n == 2)
+    {
+        printf("%d %d ", a, b);
+    }
+    else
+    {
+        printf("%d %d ", a, b);
         c = a + b;
+
+        while (c <= n)
+        {
+            printf("%d ", c);
+            a = b;
+            b = c;
+            c = a + b;
+        }
     }
 
     return 0;

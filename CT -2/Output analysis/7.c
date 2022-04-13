@@ -1,52 +1,38 @@
 #include <stdio.h>
 
-int main()
+int main(int argc, char const *argv[])
 {
-    int i = 0, sum = 0;
 
-    for (i; !i; i = ++i)
+    int a, i;
+    /* for (i = 0; i <= 7; i++)
+     {
+         i = i + 3;
+         i += 2;
+         a = a + i;
+         i -= 3;
+     } */
+
+    /*Simplify Version*/
+
+    i = 0;
+    for (; i <= 7;)
     {
-        sum = sum + i;
+        i += 5;
+        a += i;
+        i -= 2;
     }
 
-    printf("%d\n", sum);
+    printf("%d ", a); // 24
 }
 
 /*
-
-*    if(expr == 0) is equivalent to if(!expr)
-*    if(expr != 0) is equivalent to if(expr)
-
-
-        int i = 0, sum = 0;
-   =>   for (i; !i; i = ++i)
-
-            i;    i == 0;    i = ++i
-
-    It1 :   0       true
-
-            sum = sum + i;
-            sum = 0 + 0 = 0;
-                                 1
-                false (1 != 0)
-
-        <- out of loop ->
-
-        printf("%d\n", sum); // 0
-
-
-*    if(expr == 0) is equivalent to if(!expr)
-*    if(expr != 0) is equivalent to if(expr)
-
-
-        int i = 0, sum = 0;
-   =>   for (i; i; i = ++i)
-
-            i;    i != 0;    i = ++i
-
-    It1 :   0     false
-
-        <- out of loop ->
-
-        printf("%d\n", sum); // 0
+-------------------------------------------------------------
+|   i   |   i += 5  |   a += i  |   i -= 2  |   i <= 7 ?    |
+-------------------------------------------------------------
+|   i   |           |     a     |           |               |
+-------------------------------------------------------------
+|   0   |     5     |     5     |     3     |      true     |
+|   3   |     8     |     13    |     6     |      true     |
+|   6   |     11    |     24    |     9     |      false    |
+-------------------------------------------------------------
 */

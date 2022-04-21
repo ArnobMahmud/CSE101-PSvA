@@ -8,15 +8,16 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[100], n, sum = 0;
+    int A[10], n, sum = 0;
     float avg;
 
     printf("Declare array size : ");
     scanf("%d", &n);
 
-    printf("Enter elements : ");
+    printf("Enter elements :\n");
     for (int i = 0; i < n; i++)
     {
+        printf("A[%d] : ", i);
         scanf("%d", &A[i]);
     }
 

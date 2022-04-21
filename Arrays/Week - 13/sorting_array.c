@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[10], temp, n;
+    int A[100], temp, n;
 
     printf("Enter array size : ");
     scanf("%d", &n);

@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[10], temp, n;
+    int A[100], max, min, c1 = 0, c2 = 0, n;
 
     printf("Enter array size : ");
     scanf("%d", &n);
@@ -20,23 +20,24 @@ int main(int argc, char const *argv[])
         scanf("%d", &A[i]);
     }
 
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (A[j] < A[i])
-            {
-                temp = A[i];
-                A[i] = A[j];
-                A[j] = temp;
-            }
-        }
-    }
+    max = min = A[0];
 
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", A[i]);
+        if (max < A[i])
+        {
+            max = A[i];
+            c1 = i;
+        }
+        else if (min > A[i])
+        {
+            min = A[i];
+            c2 = i;
+        }
     }
+
+    printf("Max is %d in index %d.\n", max, c1);
+    printf("Min is %d in index %d.\n", min, c2);
 
     return 0;
 }

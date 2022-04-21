@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[100][100], m, n, sum = 0;
+    int A[10][10], m, n, sum = 0;
 
     printf("Enter number of row : ");
     scanf("%d", &m);

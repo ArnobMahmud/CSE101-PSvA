@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[10], temp, n;
+    int A[100], num, idx = -1, n;
 
     printf("Enter array size : ");
     scanf("%d", &n);
@@ -20,22 +20,25 @@ int main(int argc, char const *argv[])
         scanf("%d", &A[i]);
     }
 
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = i + 1; j < n; j++)
-        {
-            if (A[j] < A[i])
-            {
-                temp = A[i];
-                A[i] = A[j];
-                A[j] = temp;
-            }
-        }
-    }
+    printf("Which number you want to search ? : ");
+    scanf("%d", &num);
 
     for (int i = 0; i < n; i++)
     {
-        printf("%d ", A[i]);
+        if (num == A[i])
+        {
+            idx = i;
+            break;
+        }
+    }
+
+    if (idx == -1)
+    {
+        printf("%d is not found in the array.\n", num);
+    }
+    else
+    {
+        printf("%d is found at position %d.\n", num, idx);
     }
 
     return 0;

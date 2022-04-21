@@ -1,6 +1,7 @@
 /*  Qn :
-    Write a c program to input the values of x (-1 < x < 1) and N, and print the difference
-    between LHS and RHS of the following Maclaurin series:
+    Write a c program to input the values of x (-1 < x < 1) and N,
+    and print the difference between LHS and RHS of the 
+    following Maclaurin series:
 
         (1 − 𝑥)^-1 =  1 + 𝑥 + 𝑥^2+ 𝑥^3+ ... + 𝑥^𝑁
 

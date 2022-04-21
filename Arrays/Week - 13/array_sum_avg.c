@@ -8,24 +8,30 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[10], Ac[10], n;
+    int A[100], n, sum = 0;
+    float avg;
 
-    printf("Enter array size : ");
+    printf("Declare array size : ");
     scanf("%d", &n);
 
-    printf("Enter %d elements  : ", n);
+    printf("Enter elements :\n");
     for (int i = 0; i < n; i++)
     {
         printf("A[%d] : ", i);
         scanf("%d", &A[i]);
     }
 
-    printf("Printing from coppied array : ", n);
     for (int i = 0; i < n; i++)
     {
-        Ac[i] = A[i];
-        printf("%d ", Ac[i]);
+        if (A[i] > 0)
+        {
+            sum += A[i];
+            avg = sum / n;
+        }
     }
+
+    printf("Sum is %d.\n", sum);
+    printf("Average is %.2f.", avg);
 
     return 0;
 }

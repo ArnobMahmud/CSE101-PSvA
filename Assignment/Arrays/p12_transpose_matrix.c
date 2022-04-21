@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < m; j++)
         {
-            printf("%d\t", At[i][j]);
+            printf("%4d\t", At[i][j]);
         }
         printf("\n");
     }

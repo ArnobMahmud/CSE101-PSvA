@@ -9,6 +9,7 @@
 int main(int argc, char const *argv[])
 {
     int A[10][10], m, n, sum = 0;
+    float Ac[10][10], fctr;
 
     printf("Enter number of row : ");
     scanf("%d", &m);
@@ -26,28 +27,18 @@ int main(int argc, char const *argv[])
         }
     }
 
-    printf("\nArray : \n");
+    printf("Enter a factor : ");
+    scanf("%f", &fctr);
+
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            printf("%4d\t", A[i][j]);
+            Ac[i][j] = A[i][j] * fctr;
+            printf("%.2f\t", Ac[i][j]);
         }
         printf("\n");
     }
-
-    for (int i = 0; i < m; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            if (i == j)
-            {
-                sum += A[i][j];
-            }
-        }
-    }
-
-    printf("Sum of the diagonal element is : %d", sum);
 
     return 0;
 }

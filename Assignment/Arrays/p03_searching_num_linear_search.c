@@ -8,14 +8,15 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[100], num, pos = -1, n;
+    int A[10], num, idx = -1, n;
 
     printf("Enter array size : ");
     scanf("%d", &n);
 
-    printf("Enter %d elements  : ", n);
+    printf("Enter %d elements  :\n", n);
     for (int i = 0; i < n; i++)
     {
+        printf("A[%d] : ", i);
         scanf("%d", &A[i]);
     }
 
@@ -26,18 +27,18 @@ int main(int argc, char const *argv[])
     {
         if (num == A[i])
         {
-            pos = i + 1;
+            idx = i;
             break;
         }
     }
 
-    if (pos == -1)
+    if (idx == -1)
     {
         printf("%d is not found in the array.\n", num);
     }
     else
     {
-        printf("%d is found at position %d.\n", num, pos);
+        printf("%d is found at position %d.\n", num, idx);
     }
 
     return 0;

@@ -1,7 +1,8 @@
 /*  Qn :
-     Write a c program to input the value of N and print the sum of the following series:
+     Write a c program to input the value of N and print
+     the sum of the following series:
 
-                2^−1 + 2^−2 + 2^−3 + ... + 2^N
+                2^−1 + 2^−2 + 2^−3 + ... + 2^-N
 
             Sample Input            Sample Output
                 10                     0.999023

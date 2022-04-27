@@ -109,13 +109,13 @@
 15.Write a c program to multiply two matrices. If A and B are two matrices, the product of these matrices, C = A * B. Given, A={{1, 2}, {1, 2}} and B = {{2, 1}, {2, 1}}.<br>
 
 ### [**String**](https://github.com/ArnobMahmud/CSE101-PSvA/tree/master/Assignment/String)
-1.Write a c program to search for a character in a string. It will print the index of the element, if it is found. Otherwise, it will print “Not found.”
-2.Write a c program to count the frequency of a character in a string.
-3.Write a c program to count the number of capital letters and small letters in a string.
-4.Write a c program to count the number of vowels, consonants, digits, white-spaces, and special characters.
-5.Write a c program to count alphanumeric characters in a string. Note that alphanumeric characters are a combination of alphabetic and numeric characters. Your program will print 8 for this string "<html></html>".
-6.Write a c program to calculate the length of a string.
-7.Write a c program to add three strings.
-8.Write a c program to copy a string to another string.
-9.Write a c program to reverse a string.
-10.Write a c program to check whether a string is a palindrome or not.
+1.Write a c program to search for a character in a string. It will print the index of the element, if it is found. Otherwise, it will print “Not found.”<br>
+2.Write a c program to count the frequency of a character in a string.<br>
+3.Write a c program to count the number of capital letters and small letters in a string.<br>
+4.Write a c program to count the number of vowels, consonants, digits, white-spaces, and special characters.<br>
+5.Write a c program to count alphanumeric characters in a string. Note that alphanumeric characters are a combination of alphabetic and numeric characters. Your program will print 8 for this string "<html></html>".<br>
+6.Write a c program to calculate the length of a string.<br>
+7.Write a c program to add three strings.<br>
+8.Write a c program to copy a string to another string.<br>
+9.Write a c program to reverse a string.<br>
+10.Write a c program to check whether a string is a palindrome or not.<br>

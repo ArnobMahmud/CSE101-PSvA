@@ -3,7 +3,7 @@
     unit vector from P to Q as output according to the following formula :
 
                            Q - P
-                     aˆ = --------
+                     â  = --------
                           |Q − P|
 
             Sample Input        Sample Output

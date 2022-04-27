@@ -13,10 +13,9 @@ int main(int argc, char const *argv[])
     printf("Enter Number of elements : ");
     scanf("%d", &n);
 
-    printf("Enter %d elements :\n", n);
+    printf("Enter %d elements of an Array : ", n);
     for (int i = 0; i < n; i++)
     {
-        printf("A[%d] : ", i);
         scanf("%d", &A[i]);
     }
 

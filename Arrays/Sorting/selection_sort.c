@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[10], num, min_idx, n, temp;
+    int A[10], temp, n;
 
     printf("Enter array size : ");
     scanf("%d", &n);
@@ -20,25 +20,22 @@ int main(int argc, char const *argv[])
         scanf("%d", &A[i]);
     }
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
-        min_idx = i;
         for (int j = i + 1; j < n; j++)
         {
-            if (A[j] < A[min_idx])
+            if (A[j] < A[i])
             {
-                min_idx = j;
+                temp = A[i];
+                A[i] = A[j];
+                A[j] = temp;
             }
         }
-        temp = A[i];
-        A[i] = A[min_idx];
-        A[min_idx] = temp;
     }
 
-    printf("Sorted array : \n");
     for (int i = 0; i < n; i++)
     {
-        printf("%4d", A[i]);
+        printf("%d ", A[i]);
     }
 
     return 0;

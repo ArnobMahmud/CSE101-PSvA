@@ -1,9 +1,9 @@
 /*  Qn :
-    Write a c program to take two 3D points using arrays, i.e., P, Q, as input and print the
+    Write a c function to take two 3D points using arrays, i.e., P, Q, as input and print the
     unit vector from P to Q as output according to the following formula :
 
                            Q - P
-                     aˆ = --------
+                    â  = --------
                           |Q − P|
 
             Sample Input        Sample Output

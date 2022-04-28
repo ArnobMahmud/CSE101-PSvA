@@ -22,7 +22,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[2][4], Bn[2][4];
+    int A[2][4], bin[2][4];
 
     for (int i = 0; i < 2; i++)
     {
@@ -36,8 +36,8 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < 4; j++)
         {
-            Bn[i][j] = round(1 / (1 + exp(-10 * A[i][j])));
-            printf("%d\t", Bn[i][j]);
+            bin[i][j] = round(1 / (1 + exp(-10 * A[i][j])));
+            printf("%d\t", bin[i][j]);
         }
         printf("\n");
     }

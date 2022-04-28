@@ -9,7 +9,7 @@
 
 int main(int argc, char const *argv[])
 {
-    char str[10];
+    char str[100];
     int count;
 
     puts("Enter a string :");

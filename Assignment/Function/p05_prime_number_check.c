@@ -8,16 +8,16 @@
 
 int primeCheck(int num)
 {
-    int count = 0;
+    int flag = 0;
     for (int i = 2; i <= num / 2; i++)
     {
         if (num % i == 0)
         {
-            count = 1;
+            flag = 1;
             break;
         }
     }
-    if (count != 0)
+    if (flag != 0)
     {
         return 0;
     }

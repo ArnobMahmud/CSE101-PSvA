@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    char ch[30];
+    char ch[100];
     int count;
 
     puts("Enter a string : ");

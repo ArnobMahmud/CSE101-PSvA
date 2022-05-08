@@ -2,7 +2,6 @@
     Write a c program to take a string, starting index (inclusive), and ending index
     (exclusive) as input and print the substring as output.
 
-
             Sample Input        Sample Output
             Dept. of FE
                 3 10                t. of F
@@ -19,14 +18,14 @@
 
 int main(int argc, char const *argv[])
 {
-    char str[20], inc, exc;
+    char str[100];
+    int inc, exc;
 
     gets(str);
 
-    putchar(inc);
-    putchar(exc);
+    scanf("%d %d", &inc, &exc);
 
-    for (int i = str[inc]; i <= str[exc]; i++)
+    for (int i = inc; i <= exc; i++)
     {
         printf("%c", str[i]);
     }

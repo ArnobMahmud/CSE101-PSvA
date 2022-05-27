@@ -6,21 +6,19 @@
 
 #include <stdio.h>
 
-int sum(int n1, int n2)
+int sum(int a, int b)
 {
-    int c;
-    c = n1 + n2;
-    return c;
+    return a + b;
 }
 
 int main(int argc, char const *argv[])
 {
-    int n1, n2;
+    int a, b;
 
     printf("Enter two numbers : ");
-    scanf("%d %d", &n1, &n2);
+    scanf("%d %d", &a, &b);
 
-    printf("Sum is %d.\n", sum(n1, n2));
+    printf("Sum is %d.\n", sum(a, b));
 
     return 0;
 }

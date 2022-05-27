@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
         if (A[i] > 0)
         {
             sum += A[i];
-            avg = sum / n;
+            avg = (float)sum / n;
         }
     }
 

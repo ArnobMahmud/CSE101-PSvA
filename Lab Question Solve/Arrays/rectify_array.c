@@ -3,7 +3,7 @@
 
             Sample Input         Sample Output
             3  -2  5                 3 0 5
-            -2  5 -9                 0 5 9
+            -2  5 -9                 0 5 0
             3  -2  5                 3 0 5
 */
 
@@ -18,7 +18,7 @@
 int main(int argc, char const *argv[])
 {
     int A[3][3];
-    
+
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -34,11 +34,7 @@ int main(int argc, char const *argv[])
         {
             if (A[i][j] < 0)
             {
-                A[i][j] *= -1;
-            }
-            if (A[i][j] % 2 == 0)
-            {
-                A[i][j] %= 2;
+                A[i][j] = 0;
             }
             printf("%4d", A[i][j]);
         }

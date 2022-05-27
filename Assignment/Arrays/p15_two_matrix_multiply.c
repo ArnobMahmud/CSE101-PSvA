@@ -19,7 +19,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int A[2][3] = 
+    int A[2][2] = 
     {
         {1, 2}, 
         {3, 4}

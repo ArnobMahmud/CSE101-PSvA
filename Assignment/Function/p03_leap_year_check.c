@@ -20,12 +20,20 @@ int leapYear(int year)
 
 int main(int argc, char const *argv[])
 {
-    int year;
+    int year, bin;
 
     printf("Enter a year : ");
     scanf("%d", &year);
 
-    printf("%d", leapYear(year));
+    bin = leapYear(year);
+    if (bin == 1)
+    {
+        printf("%d is a leap year", year);
+    }
+    else
+    {
+        printf("%d is not a leap year", year);
+    }
 
     return 0;
 }

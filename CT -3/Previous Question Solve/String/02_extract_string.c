@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 
     scanf("%d %d", &inc, &exc);
 
-    for (int i = inc; i <= exc; i++)
+    for (int i = inc; i < exc; i++)
     {
         printf("%c", str[i]);
     }

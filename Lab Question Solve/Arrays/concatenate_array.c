@@ -30,10 +30,10 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < 3; i++)
     {
         scanf("%d", &B[i]);
-        C[i + 2] = B[i];
+        C[i + 3] = B[i];
     }
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 6; i++)
     {
         printf("%4d", C[i]);
     }

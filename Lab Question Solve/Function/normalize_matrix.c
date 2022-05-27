@@ -19,14 +19,17 @@
 
 void normalizeMatrix(int A[2][2])
 {
-    float detA, normA[2][2];
+    float max, normA[2][2];
 
+    max = A[0][0];
     for (int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)
         {
-            detA = ((A[0][0] * A[1][1]) - (A[1][0] * A[0][1]));
-            normA[i][j] = A[i][j] / detA;
+            if (max < A[i][j])
+            {
+                max = A[i][j];
+            }
         }
     }
 
@@ -34,6 +37,7 @@ void normalizeMatrix(int A[2][2])
     {
         for (int j = 0; j < 2; j++)
         {
+            normA[i][j] = A[i][j] / max;
             printf("%.2f\t", normA[i][j]);
         }
         printf("\n");

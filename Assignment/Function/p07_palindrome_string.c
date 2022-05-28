@@ -28,13 +28,11 @@ void main(int argc, char const *argv[])
 {
 
     char str1[10];
-    int val;
 
     puts("Enter a string : ");
     gets(str1);
 
-    val = palindromeCheck(str1);
-    if (val == 1)
+    if (palindromeCheck(str1) == 1)
     {
         puts("Palindrome");
     }

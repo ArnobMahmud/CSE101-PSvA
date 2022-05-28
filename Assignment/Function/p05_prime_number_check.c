@@ -21,14 +21,12 @@ int primeCheck(int num)
 
 int main(int argc, char const *argv[])
 {
-    int num, bin;
+    int num;
 
     printf("Enter a number : ");
     scanf("%d", &num);
 
-    bin = primeCheck(num);
-
-    if (bin == 1)
+    if (primeCheck(num) == 1)
     {
         printf("%d is a prime number", num);
     }

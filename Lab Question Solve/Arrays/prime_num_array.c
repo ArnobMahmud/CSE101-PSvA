@@ -38,6 +38,7 @@ int main(int argc, char const *argv[])
                 if (A[i][j] % k == 0)
                 {
                     flag = 1;
+                    break;
                 }
             }
 

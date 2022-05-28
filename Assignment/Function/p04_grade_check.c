@@ -36,10 +36,10 @@ float grade(int mark)
 
 int main(int argc, char const *argv[])
 {
-    int mark;
+    float mark;
 
     printf("Enter mark : ");
-    scanf("%d", &mark);
+    scanf("%f", &mark);
 
     printf("Grade is : %.2f", grade(mark));
 

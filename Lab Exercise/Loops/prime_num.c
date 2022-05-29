@@ -18,6 +18,7 @@ void main(int argc, char const *argv[])
         if (num % i == 0)
         {
             flag = 1;
+            break;
         }
     }
 

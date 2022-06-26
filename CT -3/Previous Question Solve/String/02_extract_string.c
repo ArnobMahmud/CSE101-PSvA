@@ -16,19 +16,19 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char const *argv[])
+void main(int argc, char const *argv[])
 {
-    char str[100];
-    int inc, exc;
+    char str[20], sub[20];
+    int inc, exc, i;
 
     gets(str);
-
     scanf("%d %d", &inc, &exc);
 
-    for (int i = inc; i < exc; i++)
+    for (i = inc; i < exc; i++)
     {
-        printf("%c", str[i]);
+        sub[i - inc] = str[i];
     }
 
-    return 0;
+    sub[i - inc] = '\0';
+    puts(sub);
 }

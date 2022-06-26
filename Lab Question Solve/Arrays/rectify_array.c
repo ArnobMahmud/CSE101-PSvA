@@ -32,10 +32,7 @@ int main(int argc, char const *argv[])
     {
         for (int j = 0; j < 3; j++)
         {
-            if (A[i][j] < 0)
-            {
-                A[i][j] = 0;
-            }
+            A[i][j] < 0 ? A[i][j] = 0 : A[i][j];
             printf("%4d", A[i][j]);
         }
         printf("\n");

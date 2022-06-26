@@ -119,3 +119,15 @@
 8.Write a c program to copy a string to another string.<br>
 9.Write a c program to reverse a string.<br>
 10.Write a c program to check whether a string is a palindrome or not.<br>
+
+### [**Function**](https://github.com/ArnobMahmud/CSE101-PSvA/tree/master/Assignment/Function)
+2.How does function work?<br>
+3.Write a c function that takes two numbers as parameters and returns the sum of them.<br>
+4.Write a c function that takes a year as a parameter and returns 1 if it is a leap year, otherwise, it returns 0. It will return 1 for 2000 and 0 for 2100.<br>
+5.Write a c function that takes mark of a subject as parameter and returns obtained grade.<br>
+6.Write a c function that takes a number as a parameter and returns 1 if it is prime, otherwise, it returns 0. It prints 1 for 23 and 0 for 22.<br>
+7.Write a c function that takes an array as a parameter and returns the average of that array. <br>
+8.Write a c function to check whether a string is a palindrome or not. It returns 1 if given string is a palindrome, otherwise, it returns 0. A string is called palindrome if the reverse of the string is the same as the original string, i.e., madam. You can use library functions. <br>
+9.Write a c function to calculate the factorial of a number using recursion. <br>
+10.Write a c function to calculate the sum of the multiples of 7 within 1 to 100, i.e., 7+14+21+...+98, using recursion. It will print 735.<br>
+11.Write a c function to swap two numbers using pointer.<br>

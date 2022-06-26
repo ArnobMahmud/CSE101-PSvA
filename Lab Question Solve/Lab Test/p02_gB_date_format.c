@@ -10,7 +10,7 @@ int timeFormat(int hr, char format)
 {
     if (format == 'A')
     {
-        if (hr != 12)
+        if (hr != 12 && hr >= 0)
         {
             return hr;
         }
@@ -22,7 +22,7 @@ int timeFormat(int hr, char format)
 
     else if (format == 'P')
     {
-        if (hr != 12)
+        if (hr != 12 && hr <= 12)
         {
             return hr + 12;
         }

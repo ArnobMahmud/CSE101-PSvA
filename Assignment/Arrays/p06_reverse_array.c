@@ -23,11 +23,11 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < n; i++)
     {
         RevA[i] = A[(n - 1) - i];
-        /*  RevA[(5 - 1) - 0] = RevA[4] ->
-            A[(5 - 1) - 1] = RevA[3] ->
-            A[(5 - 1) - 2] = RevA[2] ->
-            A[(5 - 1) - 3] = RevA[1] ->
-            A[(5 - 1) - 4] = RevA[0]
+        /*  A[(5 - 1) - 0] => A[4] = RevA[0] ->
+            A[(5 - 1) - 1] => A[3] = RevA[1] ->
+            A[(5 - 1) - 2] => A[2] = RevA[2] ->
+            A[(5 - 1) - 3] => A[1] = RevA[3] ->
+            A[(5 - 1) - 4] => A[0] = RevA[4]
         */
     }
 

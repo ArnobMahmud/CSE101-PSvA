@@ -59,7 +59,8 @@ int main(int argc, char const *argv[])
 
 /*
     Theory :
-    Transpose of a matrix is to convert a given matrix's row to column position
+    Transpose of a matrix is to convert a given matrix's
+    row to column position
 
     if, a(p * q) is a given matrix
     then, transpose of a(p * q) is aT(q * p)

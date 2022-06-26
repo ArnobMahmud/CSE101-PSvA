@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     scanf("%d", &n);
 
     i = 2;
-    while (pc != n) // for manually(without user input) change the value of n to get exact prime number.
+    while (pc != n) 
     {
         flag = 0;
         for (int j = 2; j <= i / 2; j++)

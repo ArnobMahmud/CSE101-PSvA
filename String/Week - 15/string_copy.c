@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
 
     strcpy(str2, str1);
 
-    puts("Coopied string :");
+    puts("Coppied string :");
     puts(str2);
 
     return 0;
